@@ -1,16 +1,22 @@
 # news_app
 
-A new Flutter project.
+Flutter sample app created with riverpod state management 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Run pub get to get all packages
+`flutter pub get`
 
-A few resources to get you started if this is your first Flutter project:
+Run build runner command
+`dart run build_runner build`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Run Pigeon build command with below input for native communication
+`flutter pub run pigeon --input pigeons/api_key.dart`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For Test coverage, please run below commands
+`flutter test --coverage
+genhtml coverage/lcov.info --output=coverage/html
+open coverage/html/index.html`
+
+
+
